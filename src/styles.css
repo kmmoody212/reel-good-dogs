@@ -1,3 +1,7 @@
 body {
-    background-color: rebeccapurple;
+    background-color: rgb(177, 239, 255);
+}
+
+header {
+    display: flex;
 }

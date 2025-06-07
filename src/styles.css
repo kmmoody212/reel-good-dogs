@@ -4,4 +4,28 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
+    margin: 5vh 5vw;
+}
+
+header > nav > button {
+    margin: 0 4px;
+}
+
+#content {
+    margin: auto;
+    text-align: center;
+    width: 75vw;
+}
+
+#content > .headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#content > .card-container {
+    display: flex;
+    justify-content: space-evenly;
 }

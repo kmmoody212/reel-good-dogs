@@ -20,31 +20,3 @@ export function renderHeading() {
     div.appendChild(div2); 
 }
 
-// export class Card {
-//     constructor (img, title, text) {
-//         this.img = img;
-//         this.title = title;
-//         this.text = text;
-//     }
-
-//     createCard() {
-//         const div = document.createElement("div");
-//         div.classList.add("card");
-//         return cardContainer.appendChild(div);
-//     }
-   
-//     renderImg(img) {
-//         const imageEl = document.createElement("img");
-//         imageEl.classList.add("card-img");
-//         imageEl.src = img;
-//         return this.createCard.div.appendChild(imageEl);
-//     }
-
-
-
-
-// }
-
-
-console.log("This is the home.js file!"); // testing that home.js is connecting correctly
-// test works ^^

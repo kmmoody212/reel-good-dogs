@@ -29,7 +29,8 @@ header > nav > button {
 #content {
     margin: auto;
     text-align: center;
-    width: 75vw;
+    width: 85vw;
+    border: 2px solid red;
 }
 
 #content > .headline {
@@ -42,4 +43,16 @@ header > nav > button {
 #content > .card-container {
     display: flex;
     justify-content: space-evenly;
+    max-width: 85vw;
+    border: 2px solid yellow;
+}
+
+#content > .card-container > .card {
+   max-width: 200px;
+   border: 2px solid blue;
+}
+
+#content > .card-container > .card > .card-img {
+    max-width: 185px;
+    height: auto;
 }

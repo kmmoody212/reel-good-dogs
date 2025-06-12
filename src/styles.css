@@ -3,16 +3,17 @@
 }
 
 body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(177, 239, 255);
+    margin: 0;
 }
 
 footer {
-    position: absolute;
     bottom: 0;
-    width: 100%;
+    min-width: fit-content;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 0 0 4px 0;
     
 }
 
@@ -27,9 +28,10 @@ header > nav > button {
 }
 
 #content {
-    margin: auto;
+    margin: 5% auto;
     text-align: center;
     width: 85vw;
+
     border: 2px solid red;
 }
 
@@ -54,5 +56,21 @@ header > nav > button {
 
 #content > .card-container > .card > .card-img {
     max-width: 185px;
+    height: auto;
+}
+
+#content > .about-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 3%;
+}
+
+#content > .about-div > .about-p {
+    width: 50%;
+}
+#content > .about-div > .about-img {
+    width: 35%;
     height: auto;
 }

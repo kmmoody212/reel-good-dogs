@@ -1,3 +1,5 @@
+// creates cards for "home" page
+
 const content = document.getElementById("content");
 const cardContainer = document.createElement("div");
 

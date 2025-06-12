@@ -1,4 +1,4 @@
-// Creating content on the "home" page
+// Creates heading on the "home" page
 
 const content = document.getElementById("content");
 

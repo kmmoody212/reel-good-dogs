@@ -1,10 +1,11 @@
 // import { renderHeading } from "./modules/heading";
 // import { renderContainer, createCard } from "./modules/card";
 // import  { default as hotdogs } from "../assets/hotdogs.jpg";
+import { entreeMenu } from "./modules/entrees.js";
 import "./styles.css";
-import { default as renderAboutPage } from "./pages/about";
+// import { default as renderAboutPage } from "./pages/about";
 
-renderAboutPage();
+entreeMenu();
 
 // window.onload = () => {
 //     renderHeading();
@@ -16,7 +17,8 @@ renderAboutPage();
     
 
 // button.addEventListener("click", remove children in #content div, run about.js file)
+// renderAboutPage();
 
-// button.addEventListener("click", remove children in #content div, run menu.js file)
+// TODO: button.addEventListener("click", remove children in #content div, run menu.js file)
 
-// button.addEventListener("click", remove children in #content div, run contact.js file)
+// TODO: button.addEventListener("click", remove children in #content div, run contact.js file)

@@ -76,25 +76,40 @@ header > nav > button {
 
 /* ///////////// MENU PAGE STYLING ///////////////// */
 
-#content > #menu > .entree-card { 
+#content > #menu-page > .entree-card { 
     max-width: 45%;
     padding: 1rem;
+    margin: 0.75rem;
     background-color: white;
     border-radius: 18px;
 }
 
-#content > #menu > .entree-card > .entree-heading {
+#content > #menu-page > .entree-card > .entree-heading {
     margin-bottom: 1rem;
 }
 
-#content > #menu > .entree-card > .entree {
+#content > #menu-page > .entree-card > .entree {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-#content > #menu > .entree-card > .entree-desc {
+#content > #menu-page > .entree-card > .entree-desc {
     text-align: start;
     font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+#content > #menu-page > .sides {
+    max-width: 45%;
+    padding: 1rem;
+    margin: 0.75rem;
+    background-color: white;
+    border-radius: 18px;
+}
+
+#content > #menu-page > .sides > .sides-line {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 1rem;
 }

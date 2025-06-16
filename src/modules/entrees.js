@@ -18,9 +18,9 @@ let hotdogs = [reelGood, landlubber, sebastian, tunaDog];
 export function entreeMenu() {
     const title = document.createElement("h3"); // the title of the section on the menu
     const sectionCard = document.createElement("div"); // container for entree section
-    const content = document.getElementById("content");
+    const menu = document.getElementById("menu-page");
 
-    content.appendChild(sectionCard);
+    menu.appendChild(sectionCard);
     sectionCard.classList.add("entree-card");
 
     title.textContent = "Choose Your 'Dog";

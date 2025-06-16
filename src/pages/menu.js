@@ -1,29 +1,25 @@
-const content = document.getElementById("content");
+import { entreeMenu } from "../modules/entrees";
 
+
+
+export function loadMenu() {
+
+const content = document.getElementById("content");
 const menu = document.createElement("h1");
-const title = document.createElement("h3");
-const item = document.createElement("h5");
-const desc = document.createElement("p");
 const div = document.createElement("div");
 
-// TODO: make heading
+// Menu heading
 content.appendChild(menu);
 menu.classList.add("menu-heading");
+menu.textContent = "MENU";
 
-// TODO: make main course section of menu
+// div for entire menu minus heading - might want to make each section a grid
 content.appendChild(div);
-div.classList.add("menu-card");
+div.classList.add("menu");
 
-content.appendChild(title);
-title.classList.add("section-title");
-
-
-content.appendChild(item);
-item.classList.add("item");
-
-content.appendChild(desc);
-desc.classList.add("desc");
-
+// Append Entree menu section to the menu
+const entreeCard = entreeMenu();
+div.appendChild(entreeCard);
 
 
 
@@ -31,3 +27,5 @@ desc.classList.add("desc");
 
 
 // TODO: make toppings section of menu
+
+}

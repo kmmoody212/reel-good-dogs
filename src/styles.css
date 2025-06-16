@@ -31,7 +31,6 @@ header > nav > button {
     margin: 5% auto;
     text-align: center;
     width: 85vw;
-
     border: 2px solid red;
 }
 
@@ -73,4 +72,29 @@ header > nav > button {
 #content > .about-div > .about-img {
     width: 35%;
     height: auto;
+}
+
+/* ///////////// MENU PAGE STYLING ///////////////// */
+
+#content > .menu > .entree-card { 
+    max-width: 50%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5%;
+}
+
+#content > .menu > .entree-card > .entree-heading {
+    margin-bottom: 1rem;
+}
+
+#content > .menu > .entree-card > .entree {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#content > .menu > .entree-card > .entree-desc {
+    text-align: start;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
 }

@@ -76,24 +76,24 @@ header > nav > button {
 
 /* ///////////// MENU PAGE STYLING ///////////////// */
 
-#content > .menu > .entree-card { 
-    max-width: 50%;
+#content > #menu > .entree-card { 
+    max-width: 45%;
     padding: 1rem;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 18px;
 }
 
-#content > .menu > .entree-card > .entree-heading {
+#content > #menu > .entree-card > .entree-heading {
     margin-bottom: 1rem;
 }
 
-#content > .menu > .entree-card > .entree {
+#content > #menu > .entree-card > .entree {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-#content > .menu > .entree-card > .entree-desc {
+#content > #menu > .entree-card > .entree-desc {
     text-align: start;
     font-size: 0.75rem;
     margin-bottom: 1rem;

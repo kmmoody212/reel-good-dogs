@@ -15,7 +15,7 @@ menu.textContent = "MENU";
 
 // div for entire menu minus heading - might want to make each section a grid
 content.appendChild(div);
-div.classList.add("menu");
+div.setAttribute('id', 'menu');
 
 // Append Entree menu section to the menu
 const entreeCard = entreeMenu();

@@ -1,6 +1,6 @@
 import { entreeMenu } from "../modules/entrees";
 import { loadSides } from "../modules/sides";
-
+import { loadToppings } from "../modules/toppings";
 
 
 export function loadMenu() {
@@ -22,12 +22,11 @@ div.setAttribute('id', 'menu-page');
 const entreeCard = entreeMenu();
 div.appendChild(entreeCard);
 
-
-
-// TODO: make sides section of menu
+// Append Sides menu section to the menu
 const sidesCard = loadSides();
 div.appendChild(sidesCard);
 
 // TODO: make toppings section of menu
-
+const topsCard = loadToppings();
+div.appendChild(topsCard);
 }

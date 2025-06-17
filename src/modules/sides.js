@@ -16,22 +16,19 @@ export function loadSides() {
     const menu = document.getElementById("menu-page");
     const title = document.createElement("h3");
     const div = document.createElement("div");
-
+    
     menu.appendChild(div);
-    div.classList.add("sides");
-
-    div.appendChild(title);
+    div.classList.add("sides-card");
+    
     title.classList.add("sides-heading");
     title.textContent = "Sides";
-
+    div.appendChild(title);
+    
     sideDishes.forEach(side => {
         const lineItem = document.createElement("div");
         const item = document.createElement("p");
         const price = document.createElement("p");
-    // create a new div to contain the name and price and give it a class
-        div.appendChild(lineItem);
-        lineItem.classList.add("sides-line");
-    // append the item and price elements to the new div
+     // append the item and price elements to the new div
         lineItem.appendChild(item);
         lineItem.appendChild(price);
     // add class names to the sides and prices
@@ -40,10 +37,13 @@ export function loadSides() {
     // set the text content for the item and price
         item.textContent = side.name;
         price.textContent = side.cost;
+    // create a new div to contain the name and price and give it a class    
+        div.appendChild(lineItem);
+        lineItem.classList.add("sides-line");
         
     })
 
-    
+    return div;
     
 
 }

@@ -114,7 +114,7 @@ header > nav > button {
     margin-bottom: 1rem;
 }
 
-#content > .hnl-container {
+#content > .hnl-cont {
     display: flex;
     justify-content: space-evenly;
 }

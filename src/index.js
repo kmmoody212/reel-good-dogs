@@ -23,4 +23,4 @@ loadHours();
 
 // TODO: button.addEventListener("click", remove children in #content div, run menu.js file)
 
-// TODO: button.addEventListener("click", remove children in #content div, run contact.js file)
+// TODO: button.addEventListener("click", remove children in #content div, run hours.js file)

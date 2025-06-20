@@ -1,12 +1,13 @@
 // import { renderHeading } from "./modules/heading";
 // import { renderContainer, createCard } from "./modules/card";
 // import  { default as hotdogs } from "../assets/hotdogs.jpg";
-// import { entreeMenu } from "./modules/entrees.js";
-import { loadMenu } from "./pages/menu";
-import "./styles.css";
 // import { default as renderAboutPage } from "./pages/about";
+// import { loadMenu } from "./pages/menu";
+import { loadHours } from "./pages/hours";
+import "./styles.css";
 
-loadMenu();
+// loadMenu();
+loadHours();
 
 // window.onload = () => {
 //     renderHeading();

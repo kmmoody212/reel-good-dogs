@@ -18,5 +18,7 @@ export function renderHeading() {
     // >>>>> div child of .headline div
     div2.textContent = "OPENING SOON!";
     div.appendChild(div2); 
+
+    return div;
 }
 

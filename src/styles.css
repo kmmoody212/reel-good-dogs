@@ -27,38 +27,44 @@ header > nav > button {
     margin: 0 4px;
 }
 
-#content {
+#content,
+#content > .home-container {
     margin: 5% auto;
     text-align: center;
     width: 85vw;
-    border: 2px solid red;
-}
-
-#content > .headline {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     
 }
 
-#content > .card-container {
+#content > .headline,
+#content > .home-container > .headline  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+    
+}
+
+#content > .card-container,
+#content > .home-container > .card-container {
     display: flex;
     justify-content: space-evenly;
     max-width: 85vw;
-    border: 2px solid yellow;
+    
 }
 
-#content > .card-container > .card {
+#content > .card-container > .card,
+#content > .home-container > .card-container > .card {
    max-width: 200px;
-   border: 2px solid blue;
+   
 }
 
-#content > .card-container > .card > .card-img {
+#content > .card-container > .card > .card-img,
+#content > .home-container > .card-container > .card > .card-img {
     max-width: 185px;
     height: auto;
 }
 
-#content > .about-div {
+#content > .about-container > .about-div {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -66,17 +72,17 @@ header > nav > button {
     padding: 3%;
 }
 
-#content > .about-div > .about-p {
+#content > .about-container > .about-div > .about-p {
     width: 50%;
 }
-#content > .about-div > .about-img {
+#content > .about-container > .about-div > .about-img {
     width: 35%;
     height: auto;
 }
 
 /* ///////////// MENU PAGE STYLING ///////////////// */
 
-#content > #menu-page > .entree-card { 
+#content > .menu-container > #menu-page > .entree-card { 
     max-width: 45%;
     padding: 1rem;
     margin: 0.75rem;
@@ -84,23 +90,23 @@ header > nav > button {
     border-radius: 18px;
 }
 
-#content > #menu-page > .entree-card > .entree-heading {
+#content > .menu-container > #menu-page > .entree-card > .entree-heading {
     margin-bottom: 1rem;
 }
 
-#content > #menu-page > .entree-card > .entree {
+#content > .menu-container > #menu-page > .entree-card > .entree {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-#content > #menu-page > .entree-card > .entree-desc {
+#content > .menu-container > #menu-page > .entree-card > .entree-desc {
     text-align: start;
     font-size: 0.75rem;
     margin-bottom: 1rem;
 }
 
-#content > #menu-page > .sides-card {
+#content > .menu-container > #menu-page > .sides-card {
     max-width: 45%;
     padding: 1rem;
     margin: 0.75rem;
@@ -108,7 +114,7 @@ header > nav > button {
     border-radius: 18px;
 }
 
-#content > #menu-page > .sides-card > .sides-line {
+#content > .menu-container > #menu-page > .sides-card > .sides-line {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;

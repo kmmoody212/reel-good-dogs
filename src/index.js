@@ -1,26 +1,38 @@
-// import { renderHeading } from "./modules/heading";
-// import { renderContainer, createCard } from "./modules/card";
-// import  { default as hotdogs } from "../assets/hotdogs.jpg";
-// import { default as renderAboutPage } from "./pages/about";
-// import { loadMenu } from "./pages/menu";
+import { renderHeading } from "./modules/heading";
+import { renderContainer, createCard } from "./modules/card";
+import { default as hotdogs } from "../assets/hotdogs.jpg";
+import { renderAboutPage } from "./pages/about";
+import { loadMenu } from "./pages/menu";
 import { loadHours } from "./pages/hours";
+import { loadHomePage } from "./pages/home";
 import "./styles.css";
 
-// loadMenu();
-loadHours();
+document.addEventListener("DOMContentLoaded", () => {
+  loadHomePage();
+});
 
-// window.onload = () => {
-//     renderHeading();
-//     renderContainer();
-//     createCard(hotdogs, "We sell 100% all-beef franks in a natural casing - for that perfect snap in every bite! ");
-//     createCard(hotdogs, "All of our dogs are nestled in lightly toasted, buttery split-top buns.");
-//     createCard(hotdogs, "Like your dog to look like a charcoal stick? Or maybe just a little warm? We will grill your dog to your desired doneness!");
-//                     }
-    
+const about = document.getElementById('about');
+const menu = document.getElementById('menu');
+const hours = document.getElementById('hours');
+const contentDiv = document.getElementById('content');
+const logo = document.getElementById('logo');
 
-// button.addEventListener("click", remove children in #content div, run about.js file)
-// renderAboutPage();
 
-// TODO: button.addEventListener("click", remove children in #content div, run menu.js file)
+logo.addEventListener("click", function() {
+    contentDiv.replaceChildren();
+    return loadHomePage();
+})
 
-// TODO: button.addEventListener("click", remove children in #content div, run hours.js file)
+about.addEventListener("click", function() {
+    return contentDiv.replaceChildren(renderAboutPage());
+});
+
+menu.addEventListener("click", function() {
+    return contentDiv.replaceChildren(loadMenu());
+})
+
+hours.addEventListener("click", function() {
+    return contentDiv.replaceChildren(loadHours());
+});
+
+

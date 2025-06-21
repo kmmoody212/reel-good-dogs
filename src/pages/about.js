@@ -2,7 +2,8 @@ const content = document.getElementById("content");
 import { default as hdstand } from "../../assets/hdstand.jpg";
 import { default as beach } from "../../assets/beach.jpg";
 
-export default function renderAboutPage() {
+export function renderAboutPage() {
+    const container = document.createElement("div");
     const divOne = document.createElement("div");
     const divTwo = document.createElement("div");
     const topPara = document.createElement("p");
@@ -10,13 +11,12 @@ export default function renderAboutPage() {
     const topImage = document.createElement("img");
     const bottomImage = document.createElement("img");
 
-    // Create first div holding para -> img
-
-    content.appendChild(divOne).classList.add("about-div");
+    content.appendChild(container).classList.add('about-container')    
+    container.appendChild(divOne).classList.add("about-div");
     divOne.appendChild(topPara).classList.add("about-p"); 
     divOne.appendChild(topImage).classList.add("about-img");
     
-    content.appendChild(divTwo).classList.add("about-div");
+    container.appendChild(divTwo).classList.add("about-div");
     divTwo.appendChild(bottomImage).classList.add("about-img");
     divTwo.appendChild(bottomPara).classList.add("about-p");
 
@@ -27,4 +27,5 @@ export default function renderAboutPage() {
     "The owner originally moved to NC from NH, where natural casing hotdogs are a must and split-top hotdog buns are the only option. So it was decided that this new england style of hotdogs would be shared among the warm, beachy sands of NC's coast. "
     bottomImage.src = beach;
 
+    return container;
 }

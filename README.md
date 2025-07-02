@@ -1,8 +1,6 @@
 # Reel Good Dogs 🌭🏖️
 
-## About
-
-This is a website created for future restaurant "Reel Good Dogs". At the moment, the website features an about page, a menu, and other basic information of the business. 
+This is a website created for the future restaurant "Reel Good Dogs". At the moment, the website features an about page, a menu, and other basic information about the business. 
 
 This site was also created as a solution to an assignment in the Full Stack JavaScript Course by [The Odin Project](https://theodinproject.com). 
 
